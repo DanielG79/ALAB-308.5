@@ -89,3 +89,19 @@ function incrementAge(obj) {
 
     return obj;
 }   
+
+function incrementAgeCopy(obj) {
+  // Check if the object has an 'age' field, and create it if it doesn't exist
+    let copy = { ...obj };
+    if (!copy.hasOwnProperty('age')) {
+    copy.age = 0;
+    }
+
+  // Increment the 'age' field of the copy
+    copy.age++;
+
+  // Update the 'updated_at' field of the copy with the current time
+    copy.updated_at = new Date();
+
+    return copy;
+}   
