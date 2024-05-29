@@ -105,3 +105,13 @@ function incrementAgeCopy(obj) {
 
     return copy;
 }   
+
+// Part 4: Thinking Practically
+
+// Part 5: Thinking Back
+
+//  parameters should acceptwhat the return value provide.This will help ensure the functions are flexible and can be used in a variety of contexts.
+
+// Yes
+
+// I will try to see if I can improve the code to make sure that I can improve the overall structure and organization of the code.
