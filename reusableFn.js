@@ -72,3 +72,20 @@ console.log("Total age:", totalAge);
 // Calculate the average age
 const averageAge = totalAge / people.length;
 console.log("Average age:", averageAge);    
+
+// Part 3: Thinking Critically
+
+function incrementAge(obj) {
+  // Check if the object has an 'age' field, and create it if it doesn't exist
+    if (!obj.hasOwnProperty('age')) {
+    obj.age = 0;
+    }
+
+  // Increment the 'age' field
+    obj.age++;
+
+  // Update the 'updated_at' field with the current time
+    obj.updated_at = new Date();
+
+    return obj;
+}   
